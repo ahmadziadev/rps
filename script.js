@@ -42,6 +42,9 @@ function playRound(humanChoice, computerChoice) {
     computerScore++;
     console.log(`You lose! ${capitalizeFirstLetter(computerChoice)} beats ${capitalizeFirstLetter(humanChoice)}`);
    }
+   else {
+    console.log("It's a draw!");
+   }
 }
 function capitalizeFirstLetter(text) {
     return text.at(0).toUpperCase() + text.slice(1);
