@@ -46,3 +46,18 @@ function playRound(humanChoice, computerChoice) {
 function capitalizeFirstLetter(text) {
     return text.at(0).toUpperCase() + text.slice(1);
 }
+
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        humanSelection = getHumanChoice();
+        computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+    }
+    if (humanScore > computerScore) {
+        console.log("You are the winner!");
+    }
+    else if (humanScore == computerScore) {
+        console.log("The game is a draw");
+    }
+    else console.log("You lost! Computer wins")
+}
