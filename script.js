@@ -17,6 +17,10 @@ function getComputerChoice() {
     return scissors;
 }
 
+function getHumanChoice() {
+    return prompt("Enter your choice");
+}
+
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
     /*
