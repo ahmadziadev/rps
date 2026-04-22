@@ -1,3 +1,5 @@
+let humanScore = 0;
+let computerScore = 0;
 function getComputerChoice() {
     //should be able to generate 3 choices
     let choice = Math.floor(Math.random() * 3);
