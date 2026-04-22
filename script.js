@@ -32,6 +32,13 @@ function playRound(humanChoice, computerChoice) {
    (humanChoice == paper && computerChoice == rock) ||
    (humanChoice == scissors && computerChoice == paper)) {
     humanScore++;
+    console.log(`You win! ${capitalizeFirstLetter(humanChoice)} beats ${capitalizeFirstLetter(computerChoice)}`);
    }
-   else if (humanChoice != computerChoice) computerScore++;
+   else if (humanChoice != computerChoice) {
+    computerScore++;
+    console.log(`You lose! ${capitalizeFirstLetter(computerChoice)} beats ${capitalizeFirstLetter(humanChoice)}`);
+   }
+}
+function capitalizeFirstLetter(text) {
+    return text.at(0).toUpperCase() + text.slice(1);
 }
