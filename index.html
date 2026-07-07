@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=restart_alt,settings" />
+    <style>
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+        }
+    </style>
+
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="leaderboard-button btn">
+            <span class="material-symbols-outlined">
+                restart_alt
+            </span>
+        </div>
+        <div class="navtitle"><h1>Rock Paper Scissors</h1></div>
+        <div class="settings-button btn"><span class="material-symbols-outlined">
+            settings
+        </span></div>
+    </div>
+
+    <div class="container">
+        <div class="scores">
+            <div class="scorecard human card">
+                <div class="scorecard-text">YOU</div>
+                <div class="human-score">00</div>
+            </div>
+            <div class="scorecard bot card">
+                <div class="scorecard-text">Computer</div>
+                <div class="bot-score">00</div>
+            </div>
+        </div>
+        <div class="arena card">
+            <div class="arena-text">Round 1</div>
+            <div class="arena-content">
+
+                <div class="player-card human-card">
+                    <div class="player-symbol"></div>
+                    <div class="player-name">You</div>
+                </div>
+                <div class="versus">vs</div>
+                <div class="player-card bot-card">
+                    <div class="player-symbol"></div>
+                    <div class="player-name">Computer</div>
+                </div>
+            </div>
+            <div class="player-choices">
+                <div class="rock-button btn">
+                    <div class="rock-icon"><img src="assets/noun-hand-rock-1312191(1).svg" alt="Rock Image"></div>
+                    <div class="choice">Rock</div>
+                </div>
+                <div class="paper-button btn">
+                    <div class="paper-icon"><img src="assets/noun-paper-1312193.svg" alt="Paper Image"></div>
+                    <div class="choice">Paper</div>
+                </div>
+                <div class="scissor-button btn">
+                    <div class="scissor-icon"><img src="assets/noun-scissors-1312192.svg" alt="Scissors Image"></div>
+                    <div class="choice">Scissors</div>
+                </div>
+            </div>
+            <div class="status-card">You Win! <br> Click to Continue</div>
+
+        </div>
+
+    </div>
 </body>
 </html>

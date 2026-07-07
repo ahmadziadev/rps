@@ -1,0 +1,45 @@
+div {
+    border: 1px solid black;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.arena-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-choices {
+    display: none;
+    /* display: flex; */
+}
