@@ -1,9 +1,21 @@
+:root {
+    --primary: #EA580C;
+    --secondary-dark: #666666;
+    --secondary-light: #D8D8D8;
+    --human-accent: #B02700;
+    --bot-accent: #0056C5;
+}
 div {
     border: 1px solid black;
 }
 
 body {
     margin: 0px;
+    background-color: var(--secondary-dark);
+}
+
+h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .container {
@@ -16,6 +28,7 @@ body {
 }
 
 .navbar {
+    background-color: var(--secondary-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,14 +42,51 @@ body {
 }
 
 .card {
+    background-color: var(--secondary-light);
     flex: 1;
     border-radius: 20px;
     padding: 20px;
 }
 
+.human {
+    background-color: var(--human-accent);
+}
+
+.bot {
+    background-color: var(--bot-accent);
+}
+
+.scorecard-text {
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+}
+.bot-score,
+.human-score {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    font-size: 56px;
+}
 .arena-content {
     display: flex;
     justify-content: space-around;
+}
+
+.arena-text,
+.versus,
+.player-name,
+.status-card
+{
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+
 }
 
 .player-choices {
