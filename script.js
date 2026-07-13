@@ -1,28 +1,30 @@
 let humanScore = 0;
 let computerScore = 0;
 
-const scissors = "scissors";
-const rock = "rock";
-const paper = "paper";
+const rock = 0;
+const paper = 1;
+const scissors = 2;
+
+function init() {
+    humanScore = 0;
+    computerScore = 0;
+    updateScores();
+    playRound();
+}
+
 
 function getComputerChoice() {
     //should be able to generate 3 choices
     let choice = Math.floor(Math.random() * 3);
-    if (choice == 0) {
-        return rock;
-    }
-    else if (choice == 1) {
-        return paper;
-    }
-    return scissors;
+    return choice;
 }
 
 function getHumanChoice() {
-    return prompt("Enter your choice");
 }
 
-function playRound(humanChoice, computerChoice) {
-    humanChoice = humanChoice.toLowerCase();
+function playRound() {
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
     /*
     cases where human can win:
     human       computer
@@ -36,31 +38,14 @@ function playRound(humanChoice, computerChoice) {
    (humanChoice == paper && computerChoice == rock) ||
    (humanChoice == scissors && computerChoice == paper)) {
     humanScore++;
-    console.log(`You win! ${capitalizeFirstLetter(humanChoice)} beats ${capitalizeFirstLetter(computerChoice)}`);
+    verdict("You Win!")
    }
    else if (humanChoice != computerChoice) {
     computerScore++;
-    console.log(`You lose! ${capitalizeFirstLetter(computerChoice)} beats ${capitalizeFirstLetter(humanChoice)}`);
+    verdict("You Lost :(")
    }
    else {
-    console.log("It's a draw!");
+    verdict("It's a Draw!")
    }
-}
-function capitalizeFirstLetter(text) {
-    return text.at(0).toUpperCase() + text.slice(1);
-}
-
-function playGame() {
-    for (let i = 0; i < 5; i++) {
-        humanSelection = getHumanChoice();
-        computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-    }
-    if (humanScore > computerScore) {
-        console.log("You are the winner!");
-    }
-    else if (humanScore == computerScore) {
-        console.log("The game is a draw");
-    }
-    else console.log("You lost! Computer wins")
+   updateScores();
 }

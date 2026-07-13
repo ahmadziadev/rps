@@ -95,7 +95,7 @@ h3 {
 }
 .arena-content {
     display: flex;
-    display: none;
+    /* display: none; */
     /* justify-content: space-around; */
     /* justify-content: space-between; */
     justify-content: space-evenly;
@@ -147,7 +147,7 @@ h3 {
 }
 
 .status-card {
-    display: none;
+    /* display: none; */
     background-color: var(--primary);
     border-radius: 20px;
     padding: 10px;
@@ -183,4 +183,7 @@ h3 {
 }
 .btn:hover {
     background-color: var(--primary);
+}
+.status-card:hover {
+    background-color: #e68c5b;
 }
