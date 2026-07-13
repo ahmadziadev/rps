@@ -27,13 +27,21 @@ h1 {
     flex-direction: column;
     gap: 10px;
 }
-
+/* navbar */
 .navbar {
     background-color: var(--secondary-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+.navbar .btn {
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid black 3px;
+    box-shadow: 3px 3px black;
 }
 
 .scores {
@@ -46,7 +54,7 @@ h1 {
     background-color: var(--secondary-light);
     flex: 1;
     border-radius: 20px;
-    border: 8px black solid;
+    border: 6px black solid;
     padding: 20px;
 }
 
@@ -144,5 +152,5 @@ h1 {
     /* display: flex; */
 }
 .btn {
-    box-shadow: 6px 5px black;
+    box-shadow: 5px 5px black;
 }
