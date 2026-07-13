@@ -5,11 +5,25 @@ const rock = 0;
 const paper = 1;
 const scissors = 2;
 
+let humanCounter = document.querySelector(".human-score");
+let computerCounter = document.querySelector(".bot-score");
+
 function init() {
     humanScore = 0;
     computerScore = 0;
     updateScores();
     playRound();
+}
+
+function updateScores() {
+    humanCounter.innerHTML = humanScore.toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false
+    });
+    computerCounter.innerHTML = computerScore.toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false
+    });
 }
 
 
