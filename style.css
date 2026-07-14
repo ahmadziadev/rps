@@ -147,7 +147,9 @@ h3 {
 }
 
 .status-card {
-    /* display: none; */
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
     background-color: var(--primary);
     border-radius: 20px;
     padding: 10px;
@@ -169,6 +171,7 @@ h3 {
 }
 .choice .btn {
     border-radius: 20px;
+    background-color: white;
     border: solid black 5px;
 }
 .btn {
