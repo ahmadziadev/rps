@@ -4,7 +4,7 @@ Rock Paper Scissors project for [The Odin Project](https://www.theodinproject.co
 
 ## Live Demo
 
-[Play the game here](https://ahmadziadev.github.io/rock-paper-scissors/)
+[Play the game here](https://ahmadziadev.github.io/rps/)
 
 ## About
 
