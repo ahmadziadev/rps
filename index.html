@@ -27,7 +27,7 @@
 </head>
 <body>
     <div class="navbar">
-        <button class="leaderboard-button btn" title="Reset Game">
+        <button class="reset-button btn" title="Reset Game">
             <span class="material-symbols-outlined">
                 restart_alt
             </span>
@@ -42,11 +42,11 @@
         <div class="scores">
             <div class="scorecard human card">
                 <div class="scorecard-text">You</div>
-                <div class="human-score">10</div>
+                <div class="human-score">00</div>
             </div>
             <div class="scorecard bot card">
                 <div class="scorecard-text">Computer</div>
-                <div class="bot-score">01</div>
+                <div class="bot-score">00</div>
             </div>
         </div>
         <div class="arena card">
@@ -54,12 +54,12 @@
             <div class="arena-content">
 
                 <div class="player-card human-card">
-                    <div class="player-symbol"><img src="assets/rock.svg" alt="" style="width: 100%;"></div>
+                    <div class="player-symbol"><img id="humanicon" src="assets/rock.svg" alt="" style="width: 100%;"></div>
                     <div class="player-name">You</div>
                 </div>
                 <div class="versus">vs</div>
                 <div class="player-card bot-card">
-                    <div class="player-symbol"><img src="assets/paper.svg" alt="" style="width: 100%; transform: scaleX(-1);"></div>
+                    <div class="player-symbol"><img id="computericon" src="assets/paper.svg" alt="" style="width: 100%; transform: scaleX(-1);"></div>
                     <div class="player-name">Computer</div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <div class="choice-text"><h3>Scissors</h3></div>
                 </div>
             </div>
-            <button class="status-card btn"><span class="verdict">You Win!</span><br> Click to Continue</button>
+            <button class="status-card btn"><div class="verdict">You Win!</div> <div>Click to Continue</div></button>
 
         </div>
 
